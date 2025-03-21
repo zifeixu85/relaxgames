@@ -7,6 +7,7 @@
     "dev": "node build.js --dev",
     "build": "node build.js --build",
     "vercel-build": "npm run build",
+    "cloudflare-build": "npm run build && cp _headers _redirects .",
     "create-game": "node create-game-page.js"
   },
   "keywords": [
