@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node build.js --dev",
     "build": "node build.js --build",
+    "vercel-build": "npm run build",
     "create-game": "node create-game-page.js"
   },
   "keywords": [
