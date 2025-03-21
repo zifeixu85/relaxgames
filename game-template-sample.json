@@ -1,0 +1,17 @@
+{
+  "GAME_NAME": "Amazing Adventure",
+  "GAME_TYPE": "Adventure",
+  "GAME_SLUG": "amazing-adventure",
+  "GAME_SHORT_DESCRIPTION": "Embark on an exciting journey through magical lands with challenges at every turn",
+  "GAME_IFRAME_URL": "https://example.com/games/amazing-adventure/index.html",
+  "TAG_1": "Adventure",
+  "TAG_1_COLOR": "blue",
+  "TAG_2": "Magic",
+  "TAG_2_COLOR": "purple",
+  "TAG_3": "Fun",
+  "TAG_3_COLOR": "pink",
+  "GAME_INTRO_TEXT": "Adventure awaits in this exciting journey through magical lands! Navigate obstacles, collect treasures, and defeat enemies to complete your quest.",
+  "GAME_INSTRUCTIONS": "<li>Use arrow keys to move your character around the world</li><li>Press 'Space' to jump over obstacles</li><li>Collect gems to unlock special abilities</li><li>Defeat enemies by jumping on them</li><li>Find all the hidden stars to complete each level</li>",
+  "GAME_CONTROLS_TEXT": "Use your keyboard to control the character. Arrow keys for movement, Space to jump, and 'E' to interact with objects in the game world.",
+  "RELATED_GAMES": "<!-- Related Game 1 -->\n<div class=\"game-card bg-white rounded-lg shadow-md overflow-hidden\">\n    <a href=\"/games/tile-match.html\" class=\"block relative overflow-hidden pb-[75%] bg-apple-purple/5\">\n        <img src=\"/images/tile-match.png\" alt=\"Tile Match\" class=\"absolute inset-0 w-full h-full object-cover\">\n    </a>\n    <div class=\"p-3\">\n        <h3 class=\"text-base font-bold text-apple-purple mb-1\">Tile Match</h3>\n        <div class=\"flex items-center justify-between\">\n            <span class=\"px-2 py-0.5 bg-apple-purple/10 text-apple-purple rounded-full text-xs\">Puzzle</span>\n            <a href=\"/games/tile-match.html\" class=\"text-apple-blue text-sm font-medium hover:underline\">Play</a>\n        </div>\n    </div>\n</div>\n\n<!-- Related Game 2 -->\n<div class=\"game-card bg-white rounded-lg shadow-md overflow-hidden\">\n    <a href=\"/games/candy-bubble.html\" class=\"block relative overflow-hidden pb-[75%] bg-apple-pink/5\">\n        <img src=\"/images/candy-bubble.png\" alt=\"Candy Bubble\" class=\"absolute inset-0 w-full h-full object-cover\">\n    </a>\n    <div class=\"p-3\">\n        <h3 class=\"text-base font-bold text-apple-pink mb-1\">Candy Bubble</h3>\n        <div class=\"flex items-center justify-between\">\n            <span class=\"px-2 py-0.5 bg-apple-pink/10 text-apple-pink rounded-full text-xs\">Match</span>\n            <a href=\"/games/candy-bubble.html\" class=\"text-apple-blue text-sm font-medium hover:underline\">Play</a>\n        </div>\n    </div>\n</div>"
+} 

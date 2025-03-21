@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RelaxGames - Your Favorite Online Games Collection</title>
     <meta name="description" content="Discover a collection of fun and relaxing online games. Play instantly without download on any device!">
     <meta name="keywords" content="online games, free browser games, puzzle games, fashion games, casual games, no-download games, mobile games, relaxing games">
-    <link rel="canonical" href="https://relaxgames.online" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>RelaxGames - Your Favorite Online Games Collection</title>
+    <link rel="canonical" href="https://relaxgames.online">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -37,47 +35,77 @@
             }
         }
     </script>
-    <!-- 明确关联样式表 -->
-    <link rel="stylesheet" href="./styles.css">
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW9JEWE3TD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <style type="text/css">
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .game-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .social-icon {
+            transition: transform 0.2s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        .game-iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        .game-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        @media (max-width: 768px) {
+            .game-iframe-container {
+                padding-top: 75%; /* Adjust for mobile */
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./styles.css"><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-17YVC1EZF4"></script><script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-17YVC1EZF4');
+                </script><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23FF2D55'/><stop offset='100%' style='stop-color:%23007AFF'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23grad)'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-weight='bold' font-size='45' fill='white'>RG</text></svg>"></head>
 
-      gtag('config', 'G-XW9JEWE3TD');
-    </script>
-</head>
-
-<body class="bg-apple-lightgray text-gray-800 bg-feminine-gradient bg-decorative">
-    <!-- Header (Updated to match game pages) -->
-    <header class="glass-nav sticky top-0 z-50 transition-all duration-300">
+<body class="bg-apple-lightgray text-gray-800 bg-feminine-gradient bg-decorative"><header class="glass-nav sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="./index.html" class="flex items-center">
+            <a href="/" class="flex items-center">
                 <span class="text-2xl font-bold text-apple-pink">Relax<span class="text-apple-blue">Games</span></span>
             </a>
             <nav class="hidden md:flex space-x-6">
-                <a href="./index.html" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">Home</a>
-                <a href="#all-games" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">All Games</a>
-                <a href="#about" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">About</a>
+                <a href="/" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">Home</a>
+                <a href="/#all-games" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">All Games</a>
+                <a href="/#about" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">About</a>
             </nav>
             <button class="md:hidden focus:outline-none" id="mobile-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </div>
         <!-- Mobile Menu -->
         <div class="md:hidden hidden bg-white shadow-md" id="mobile-menu">
             <div class="container mx-auto px-4 py-3 space-y-2">
-                <a href="./index.html" class="block font-medium text-gray-600 hover:text-apple-blue py-2">Home</a>
-                <a href="#all-games" class="block font-medium text-gray-600 hover:text-apple-blue py-2">All Games</a>
-                <a href="#about" class="block font-medium text-gray-600 hover:text-apple-blue py-2">About</a>
+                <a href="/" class="block font-medium text-gray-600 hover:text-apple-blue py-2">Home</a>
+                <a href="/#all-games" class="block font-medium text-gray-600 hover:text-apple-blue py-2">All Games</a>
+                <a href="/#about" class="block font-medium text-gray-600 hover:text-apple-blue py-2">About</a>
             </div>
         </div>
     </header>
+                                                    
+    
+            
 
     <!-- 优化后的 hero 部分 - 移除了图片 -->
     <div class="py-12 md:py-16 mx-4 md:mx-auto max-w-7xl mt-6 relative overflow-hidden" style="padding-top: 2rem;padding-bottom: 3rem;">
@@ -112,7 +140,7 @@
                 <!-- Large card - Candy Bubble -->
                 <div class="col-span-2 row-span-2 game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl">
                     <a href="./games/candy-bubble.html" class="block relative overflow-hidden pb-[100%] bg-gradient-to-br from-apple-purple/20 to-apple-pink/20">
-                        <img src="./images/candy-bubble.jpg" alt="Candy Bubble" class="absolute inset-0 w-full h-full object-cover">
+                        <img src="./images/candy-bubble.png" alt="Candy Bubble" class="absolute inset-0 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                             <div class="p-4 text-white">
                                 <h3 class="text-xl md:text-2xl font-bold">Candy Bubble</h3>
@@ -126,7 +154,7 @@
                 <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                     <a href="./games/cat-doctor.html" class="block">
                         <div class="relative overflow-hidden pb-[70%]">
-                            <img src="./images/cat-doctor.jpg" alt="Cat Doctor" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="./images/cat-doctor.png" alt="Cat Doctor" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <div class="flex justify-between items-start mb-2">
@@ -142,7 +170,7 @@
                 <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                     <a href="./games/owl-and-rabbit-fashion.html" class="block">
                         <div class="relative overflow-hidden pb-[70%]">
-                            <img src="./images/owl-and-rabbit.jpg" alt="Owl and Rabbit Fashion" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="./images/owl-and-rabbit.png" alt="Owl and Rabbit Fashion" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <div class="flex justify-between items-start mb-2">
@@ -158,7 +186,7 @@
                 <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                     <a href="./games/idle-restaurant.html" class="block">
                         <div class="relative overflow-hidden pb-[70%]">
-                            <img src="./images/idle-restaurant.jpg" alt="Idle Restaurant" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="./images/Idle-Restaurant.png" alt="Idle Restaurant" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <div class="flex justify-between items-start mb-2">
@@ -174,7 +202,7 @@
                 <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                     <a href="./games/shopping-mania.html" class="block">
                         <div class="relative overflow-hidden pb-[70%]">
-                            <img src="./images/shopping-mania.jpg" alt="Shopping Mania" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="./images/shopping-mania.png" alt="Shopping Mania" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <div class="flex justify-between items-start mb-2">
@@ -190,7 +218,7 @@
                 <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                     <a href="./games/weird-dance.html" class="block">
                         <div class="relative overflow-hidden pb-[70%]">
-                            <img src="./images/weird-dance.jpg" alt="Weird Dance" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="./images/weird-dance.png" alt="Weird Dance" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <div class="flex justify-between items-start mb-2">
@@ -206,7 +234,7 @@
                 <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                     <a href="./games/pets-beauty-salon.html" class="block">
                         <div class="relative overflow-hidden pb-[70%]">
-                            <img src="./images/pets-beauty-salon.jpg" alt="Pets Beauty Salon" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="./images/Pets-Beauty-Salon.png" alt="Pets Beauty Salon" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <div class="flex justify-between items-start mb-2">
@@ -222,7 +250,7 @@
                 <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                     <a href="./games/lol-surprise.html" class="block">
                         <div class="relative overflow-hidden pb-[70%]">
-                            <img src="./images/lol-surprise.jpg" alt="LOL Surprise" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="./images/lol-surprise.png" alt="LOL Surprise" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <div class="flex justify-between items-start mb-2">
@@ -238,7 +266,7 @@
                 <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                     <a href="./games/tile-match.html" class="block">
                         <div class="relative overflow-hidden pb-[70%]">
-                            <img src="./images/tile-match.jpg" alt="Tile Match" class="absolute inset-0 w-full h-full object-cover">
+                            <img src="./images/Tile-match.png" alt="Tile Match" class="absolute inset-0 w-full h-full object-cover">
                         </div>
                         <div class="p-4">
                             <div class="flex justify-between items-start mb-2">
@@ -275,166 +303,44 @@
         </div>
     </section>
 
-    <!-- Footer (Updated to match game pages) -->
-    <footer class="bg-gray-800 text-white py-6">
+                                                    
+    
+            
+
+    <!-- Scripts -->
+    
+
+    <!-- Structured data for SEO -->
+    
+    
+
+<footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <a href="./index.html" class="text-2xl font-bold">Relax<span class="text-apple-blue">Games</span></a>
+                    <a href="/" class="text-2xl font-bold">Relax<span class="text-apple-blue">Games</span></a>
                     <p class="text-gray-400 mt-1">Your favorite browser games collection</p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="./index.html" class="text-gray-300 hover:text-white transition">Home</a>
-                    <a href="#all-games" class="text-gray-300 hover:text-white transition">All Games</a>
-                    <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="/" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="/#all-games" class="text-gray-300 hover:text-white transition">All Games</a>
+                    <a href="/#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="/privacy-policy.html" class="text-gray-300 hover:text-white transition">Privacy Policy</a>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-4 pt-4 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2024 RelaxGames.online. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 RelaxGames.online. All rights reserved.</p>
                 <div class="flex space-x-4">
                     <a href="#" class="text-gray-400 hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg>
                     </a>
                     <a href="#" class="text-gray-400 hover:text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
                     </a>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    // Close mobile menu if open
-                    document.getElementById('mobile-menu').classList.add('hidden');
-                    
-                    // Smooth scroll to target
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add animation to game cards on scroll
-        const observeElements = document.querySelectorAll('.game-card');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1 });
-
-        observeElements.forEach(element => {
-            element.style.opacity = 0;
-            element.style.transform = 'translateY(20px)';
-            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            observer.observe(element);
-        });
-
-        // 图片懒加载
-        document.addEventListener("DOMContentLoaded", function() {
-            var lazyImages = [].slice.call(document.querySelectorAll("img"));
-            
-            if ("IntersectionObserver" in window) {
-                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            let lazyImage = entry.target;
-                            if (lazyImage.dataset.src) {
-                                lazyImage.src = lazyImage.dataset.src;
-                                lazyImage.removeAttribute("data-src");
-                            }
-                            lazyImageObserver.unobserve(lazyImage);
-                        }
-                    });
-                });
-                
-                lazyImages.forEach(function(lazyImage) {
-                    lazyImageObserver.observe(lazyImage);
-                });
-            }
-        });
-    </script>
-
-    <!-- Structured data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "RelaxGames.online",
-        "url": "https://relaxgames.online",
-        "description": "Free online games to play in your browser. No downloads required.",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://relaxgames.online/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": [
-            {
-                "@type": "VideoGame",
-                "position": 1,
-                "name": "Candy Bubble",
-                "description": "Match candies and create combos in this delightful puzzle adventure!",
-                "genre": ["Puzzle", "Casual"],
-                "gamePlatform": "Web Browser",
-                "url": "https://relaxgames.online/games/candy-bubble.html"
-            },
-            {
-                "@type": "VideoGame",
-                "position": 2,
-                "name": "Pets Beauty Salon",
-                "description": "Pamper adorable pets with stylish makeovers in this fun salon simulator.",
-                "genre": ["Simulation", "Beauty"],
-                "gamePlatform": "Web Browser",
-                "url": "https://relaxgames.online/games/pets-beauty-salon.html"
-            },
-            {
-                "@type": "VideoGame",
-                "position": 3,
-                "name": "Owl and Rabbit Fashion",
-                "description": "Create stylish outfits for cute animal characters in this fashionable game.",
-                "genre": ["Fashion", "Dress Up"],
-                "gamePlatform": "Web Browser",
-                "url": "https://relaxgames.online/games/owl-and-rabbit-fashion.html"
-            }
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "RelaxGames.online",
-        "url": "https://relaxgames.online",
-        "logo": "https://relaxgames.online/images/logo.png",
-        "sameAs": [
-            "https://www.facebook.com/relaxgamesonline",
-            "https://twitter.com/relaxgamesonl",
-            "https://www.instagram.com/relaxgamesonline/"
-        ]
-    }
-    </script>
-</body>
-</html>
+    </footer></body></html>

@@ -1,0 +1,22 @@
+{
+  "name": "relaxgames",
+  "version": "1.0.0",
+  "description": "RelaxGames - Your favorite online games collection",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node build.js --dev",
+    "build": "node build.js --build",
+    "create-game": "node create-game-page.js"
+  },
+  "keywords": [
+    "games",
+    "online",
+    "browser",
+    "casual"
+  ],
+  "author": "RelaxGames",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  }
+}
