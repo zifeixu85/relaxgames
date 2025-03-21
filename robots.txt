@@ -2,5 +2,7 @@ User-agent: *
 Allow: /
 Sitemap: https://relaxgames.online/sitemap.xml
 
-# 禁止访问模板文件
-Disallow: /games/template.html 
+# Disallow template and development files
+Disallow: /games/template.html
+Disallow: /*.json$
+Disallow: /*.md$ 

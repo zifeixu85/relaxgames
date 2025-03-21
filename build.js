@@ -5,6 +5,8 @@ const { JSDOM } = require('jsdom');
 // 读取组件内容
 const headerContent = fs.readFileSync(path.join(__dirname, 'components/header.html'), 'utf8');
 const footerContent = fs.readFileSync(path.join(__dirname, 'components/footer.html'), 'utf8');
+// 读取SEO相关内容
+const metaTagsContent = fs.readFileSync(path.join(__dirname, 'meta-tags.html'), 'utf8');
 
 // 基础样式引用
 const baseStyles = `<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -218,6 +220,9 @@ files.forEach(file => {
                     head.innerHTML += tag + '\n    ';
                 });
                 
+                // 添加额外的SEO相关标签
+                head.innerHTML += '\n    ' + metaTagsContent;
+                
                 // 添加样式和脚本
                 const stylesPath = file.startsWith('games/') ? '../styles.css' : './styles.css';
                 head.innerHTML += '\n    ' + baseStyles + '\n    ' + 
@@ -239,6 +244,29 @@ files.forEach(file => {
                     gtag('config', 'G-17YVC1EZF4');
                 `;
                 head.appendChild(gaScriptInline);
+                
+                // 添加结构化数据脚本
+                const structuredDataPath = file.startsWith('games/') ? '../seo-script.js' : './seo-script.js';
+                const seoScript = document.createElement('script');
+                seoScript.setAttribute('defer', '');
+                seoScript.setAttribute('src', structuredDataPath);
+                head.appendChild(seoScript);
+                
+                // 添加网站通用脚本
+                const scriptsPath = file.startsWith('games/') ? '../scripts.js' : './scripts.js';
+                const commonScript = document.createElement('script');
+                commonScript.setAttribute('defer', '');
+                commonScript.setAttribute('src', scriptsPath);
+                head.appendChild(commonScript);
+                
+                // 如果是游戏页面，添加游戏描述增强脚本
+                if (file.startsWith('games/')) {
+                    const gameEnhancementPath = '../game-descriptions.js';
+                    const gameScript = document.createElement('script');
+                    gameScript.setAttribute('defer', '');
+                    gameScript.setAttribute('src', gameEnhancementPath);
+                    head.appendChild(gameScript);
+                }
                 
                 // 添加Favicon
                 const faviconLink = document.createElement('link');

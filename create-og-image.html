@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RelaxGames OG Image Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .og-container {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      background: linear-gradient(135deg, #FF2D55 0%, #5856D6 100%);
+      overflow: hidden;
+    }
+    
+    .decorative-circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .circle-1 {
+      width: 400px;
+      height: 400px;
+      top: -100px;
+      left: -100px;
+    }
+    
+    .circle-2 {
+      width: 300px;
+      height: 300px;
+      bottom: -50px;
+      right: -50px;
+    }
+    
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      z-index: 10;
+      padding: 0 100px;
+      text-align: center;
+      color: white;
+    }
+    
+    .logo {
+      font-size: 72px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    
+    .pink {
+      color: #FFF;
+    }
+    
+    .blue {
+      color: #FFF;
+      opacity: 0.9;
+    }
+    
+    .tagline {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      max-width: 800px;
+    }
+    
+    .game-grid {
+      display: flex;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    
+    .game-icon {
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+    }
+    
+    .footer {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 
+  Instructions:
+  1. Open this file in a browser
+  2. Take a screenshot (1200x630px) for your Open Graph image
+  3. Save it as og-image.jpg in the images folder
+  4. Create a smaller version (800x418px) for Twitter and save as twitter-image.jpg
+-->
+
+<div class="og-container">
+  <div class="decorative-circle circle-1"></div>
+  <div class="decorative-circle circle-2"></div>
+  
+  <div class="content">
+    <div class="logo">
+      <span class="pink">Relax</span><span class="blue">Games</span>
+    </div>
+    <div class="tagline">Free Online Games to Help You Unwind</div>
+    
+    <div class="game-grid">
+      <div class="game-icon">🧩</div>
+      <div class="game-icon">👗</div>
+      <div class="game-icon">🎮</div>
+      <div class="game-icon">🍭</div>
+      <div class="game-icon">🐱</div>
+    </div>
+  </div>
+  
+  <div class="footer">relaxgames.online</div>
+</div>
+
+</body>
+</html> 
