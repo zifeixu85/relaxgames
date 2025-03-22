@@ -91,6 +91,9 @@ const gaCode = `<!-- Google tag (gtag.js) -->
       gtag('config', 'G-17YVC1EZF4');
     </script>`;
 
+// Umami 统计代码
+const umamiCode = `<script defer src="https://cloud.umami.is/script.js" data-website-id="5b2dd15f-a25b-406e-b487-89788b07b581"></script>`;
+
 // Favicon 代码
 const faviconCode = `<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23FF2D55'/><stop offset='100%' style='stop-color:%23007AFF'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23grad)'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-weight='bold' font-size='45' fill='white'>RG</text></svg>">`;
 
@@ -244,6 +247,13 @@ files.forEach(file => {
                     gtag('config', 'G-17YVC1EZF4');
                 `;
                 head.appendChild(gaScriptInline);
+                
+                // 添加Umami统计代码
+                const umamiScript = document.createElement('script');
+                umamiScript.setAttribute('defer', '');
+                umamiScript.setAttribute('src', 'https://cloud.umami.is/script.js');
+                umamiScript.setAttribute('data-website-id', '5b2dd15f-a25b-406e-b487-89788b07b581');
+                head.appendChild(umamiScript);
                 
                 // 添加结构化数据脚本
                 const structuredDataPath = file.startsWith('games/') ? '../seo-script.js' : './seo-script.js';
