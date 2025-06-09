@@ -1,0 +1,387 @@
+[
+  {
+    "id": "candy-bubble",
+    "title": "Candy Bubble",
+    "slug": "candy-bubble",
+    "imageSlug": "candy-bubble",
+    "gameType": "Match 3 Puzzle Game",
+    "description": "Match colorful candies in this delightful puzzle adventure!",
+    "shortDescription": "A sweet puzzle adventure",
+    "primaryColor": "pink",
+    "iframeUrl": "https://www.onlinegames.io/games/2021/2/candy-bubble/index.html",
+    "tags": [
+      { "name": "Puzzle", "color": "pink" },
+      { "name": "Match3", "color": "purple" },
+      { "name": "Casual", "color": "blue" }
+    ],
+    "introText": "Match colorful candies to clear levels in this sweet puzzle game!",
+    "instructions": [
+      "Swap adjacent candies to create matches of 3 or more",
+      "Create special candies by matching 4 or more in a row",
+      "Clear all obstacles and reach the target score",
+      "Complete each level before running out of moves",
+      "Unlock new levels and challenges as you progress"
+    ],
+    "controlsText": "Click or tap on a candy and then on an adjacent candy to swap them and create matches!",
+    "relatedGames": [
+      {
+        "title": "Tile Match",
+        "slug": "tile-match",
+        "imageSlug": "tile-match",
+        "tag": "Puzzle",
+        "color": "blue"
+      },
+      {
+        "title": "LOL Surprise",
+        "slug": "lol-surprise",
+        "imageSlug": "lol-surprise",
+        "tag": "Racing",
+        "color": "pink"
+      },
+      {
+        "title": "Weird Dance",
+        "slug": "weird-dance",
+        "imageSlug": "weird-dance",
+        "tag": "Dance",
+        "color": "purple"
+      },
+      {
+        "title": "Cat Doctor",
+        "slug": "cat-doctor",
+        "imageSlug": "cat-doctor",
+        "tag": "Simulation",
+        "color": "teal"
+      }
+    ]
+  },
+  {
+    "id": "owl-and-rabbit-fashion",
+    "title": "Owl and Rabbit Fashion",
+    "slug": "owl-and-rabbit-fashion",
+    "imageSlug": "owl-and-rabbit",
+    "gameType": "Cute Animal Dress Up",
+    "description": "Create stylish outfits for cute animal characters in this fashionable game.",
+    "shortDescription": "Dress up cute animal characters",
+    "primaryColor": "indigo",
+    "iframeUrl": "https://www.onlinegames.io/games/2021/2/owl-and-rabbit-fashion/index.html",
+    "tags": [
+      { "name": "Fashion", "color": "indigo" },
+      { "name": "Dress Up", "color": "purple" },
+      { "name": "Creativity", "color": "cyan" }
+    ],
+    "introText": "Create stylish outfits for the cute Owl and Rabbit characters in this fashion game!",
+    "instructions": [
+      "Choose which character you want to style",
+      "Select clothing items from different categories (tops, bottoms, dresses)",
+      "Add accessories like hats, glasses, and jewelry",
+      "Mix and match colors and styles to create the perfect look",
+      "Save your creation or start a new outfit"
+    ],
+    "controlsText": "Be creative and experiment with different combinations to make your characters look fabulous!",
+    "relatedGames": [
+      {
+        "title": "Cat Doctor",
+        "slug": "cat-doctor",
+        "imageSlug": "cat-doctor",
+        "tag": "Simulation",
+        "color": "teal"
+      },
+      {
+        "title": "Pets Beauty Salon",
+        "slug": "pets-beauty-salon",
+        "imageSlug": "pets-beauty-salon",
+        "tag": "Beauty",
+        "color": "pink"
+      },
+      {
+        "title": "LOL Surprise",
+        "slug": "lol-surprise",
+        "imageSlug": "lol-surprise",
+        "tag": "Racing",
+        "color": "cyan"
+      },
+      {
+        "title": "Shopping Mania",
+        "slug": "shopping-mania",
+        "imageSlug": "shopping-mania",
+        "tag": "Shopping",
+        "color": "orange"
+      }
+    ]
+  },
+  {
+    "id": "cat-doctor",
+    "title": "Cat Doctor",
+    "slug": "cat-doctor",
+    "imageSlug": "cat-doctor",
+    "gameType": "Veterinary Simulation Game",
+    "description": "Treat and take care of adorable feline patients in this veterinary simulation.",
+    "shortDescription": "A fun vet simulation game",
+    "primaryColor": "teal",
+    "iframeUrl": "https://html5.gamedistribution.com/3657e20ba8b644de87fa71d7ea26d68e/?gd_sdk_referrer_url=https://www.onlinegames.io/cat-doctor",
+    "tags": [
+      { "name": "Simulation", "color": "teal" },
+      { "name": "Animals", "color": "green" },
+      { "name": "Educational", "color": "blue" }
+    ],
+    "introText": "Help sick and injured cats recover in this veterinary simulation game!",
+    "instructions": [
+      "Examine your feline patients to identify their health issues",
+      "Use different medical tools to treat various conditions",
+      "Follow the treatment steps in the correct order",
+      "Clean and bandage wounds, give medicine, or perform procedures",
+      "Complete all treatments to make the cat healthy"
+    ],
+    "controlsText": "Use your mouse or touchscreen to interact with the medical tools and follow the treatment steps.",
+    "relatedGames": [
+      {
+        "title": "Owl and Rabbit Fashion",
+        "slug": "owl-and-rabbit-fashion",
+        "imageSlug": "owl-and-rabbit",
+        "tag": "Fashion",
+        "color": "indigo"
+      },
+      {
+        "title": "Pets Beauty Salon",
+        "slug": "pets-beauty-salon",
+        "imageSlug": "pets-beauty-salon",
+        "tag": "Beauty",
+        "color": "pink"
+      },
+      {
+        "title": "Shopping Mania",
+        "slug": "shopping-mania",
+        "imageSlug": "shopping-mania",
+        "tag": "Shopping",
+        "color": "orange"
+      },
+      {
+        "title": "LOL Surprise",
+        "slug": "lol-surprise",
+        "imageSlug": "lol-surprise",
+        "tag": "Racing",
+        "color": "cyan"
+      }
+    ]
+  },
+  {
+    "id": "pets-beauty-salon",
+    "title": "Pets Beauty Salon",
+    "slug": "pets-beauty-salon",
+    "imageSlug": "pets-beauty-salon",
+    "gameType": "Pet Salon Simulator",
+    "description": "Pamper adorable pets with stylish makeovers in this fun salon simulator.",
+    "shortDescription": "Create cute pet makeovers",
+    "primaryColor": "pink",
+    "iframeUrl": "https://www.onlinegames.io/games/2021/2/pets-beauty-salon/index.html",
+    "tags": [
+      { "name": "Beauty", "color": "pink" },
+      { "name": "Pets", "color": "orange" },
+      { "name": "Kids", "color": "purple" }
+    ],
+    "introText": "In Pets Beauty Salon, you'll take care of cute animals and help them look their best!",
+    "instructions": [
+      "Select a pet to style from the available options",
+      "Clean and groom your pet with various tools",
+      "Apply cosmetics, accessories, and outfits",
+      "Complete all tasks to finish the makeover",
+      "Take a photo of your finished work!"
+    ],
+    "controlsText": "Use your mouse or touchscreen to interact with the salon tools and create adorable pet styles.",
+    "relatedGames": [
+      {
+        "title": "Owl and Rabbit Fashion",
+        "slug": "owl-and-rabbit-fashion",
+        "imageSlug": "owl-and-rabbit",
+        "tag": "Fashion",
+        "color": "indigo"
+      },
+      {
+        "title": "Cat Doctor",
+        "slug": "cat-doctor",
+        "imageSlug": "cat-doctor",
+        "tag": "Simulation",
+        "color": "teal"
+      },
+      {
+        "title": "Shopping Mania",
+        "slug": "shopping-mania",
+        "imageSlug": "shopping-mania",
+        "tag": "Shopping",
+        "color": "orange"
+      },
+      {
+        "title": "Weird Dance",
+        "slug": "weird-dance",
+        "imageSlug": "weird-dance",
+        "tag": "Dance",
+        "color": "purple"
+      }
+    ]
+  },
+  {
+    "id": "tile-match",
+    "title": "Tile Match",
+    "slug": "tile-match",
+    "imageSlug": "tile-match",
+    "gameType": "Puzzle Matching Game",
+    "description": "Match identical tiles and clear the board in this addictive puzzle game.",
+    "shortDescription": "Test your matching skills",
+    "primaryColor": "blue",
+    "iframeUrl": "https://unblocked-games.s3.amazonaws.com/games/2024/unity3/cake-match-puzzle/index.html",
+    "tags": [
+      { "name": "Puzzle", "color": "blue" },
+      { "name": "Matching", "color": "teal" },
+      { "name": "Brain", "color": "indigo" }
+    ],
+    "introText": "Challenge your memory and matching skills in this addictive tile puzzle game!",
+    "instructions": [
+      "Find and match identical tiles on the board",
+      "Connect matching tiles with a line that has at most 2 turns",
+      "Matched tiles will disappear from the board",
+      "Clear all tiles before the time runs out",
+      "Complete levels to unlock new challenges and tile designs"
+    ],
+    "controlsText": "Use your mouse or touch the screen to select and match tiles. Plan carefully to clear the board efficiently!",
+    "relatedGames": [
+      {
+        "title": "Candy Bubble",
+        "slug": "candy-bubble",
+        "imageSlug": "candy-bubble",
+        "tag": "Puzzle",
+        "color": "purple"
+      },
+      {
+        "title": "LOL Surprise",
+        "slug": "lol-surprise",
+        "imageSlug": "lol-surprise",
+        "tag": "Racing",
+        "color": "cyan"
+      },
+      {
+        "title": "Weird Dance",
+        "slug": "weird-dance",
+        "imageSlug": "weird-dance",
+        "tag": "Dance",
+        "color": "purple"
+      },
+      {
+        "title": "Idle Restaurant",
+        "slug": "idle-restaurant",
+        "imageSlug": "idle-restaurant",
+        "tag": "Simulation",
+        "color": "green"
+      }
+    ]
+  },
+  {
+    "id": "weird-dance",
+    "title": "Weird Dance",
+    "slug": "weird-dance",
+    "imageSlug": "weird-dance",
+    "gameType": "Funny Dancing Game",
+    "description": "Create hilarious dance routines and watch funny characters perform them.",
+    "shortDescription": "A hilarious dance game",
+    "primaryColor": "yellow",
+    "iframeUrl": "https://play.wgplayground.com/ifr/621312364da0473ac6839a0c6d918b0d",
+    "tags": [
+      { "name": "Fun", "color": "yellow" },
+      { "name": "Dancing", "color": "purple" },
+      { "name": "Comedy", "color": "blue" }
+    ],
+    "introText": "Join the fun and show off your best dance moves in this quirky dancing game!",
+    "instructions": [
+      "Select your favorite weird dancer character",
+      "Follow the on-screen dance prompts by tapping or clicking at the right time",
+      "Match your moves to the beat of the music",
+      "Perform special combos to earn bonus points",
+      "Unlock new dance moves and outfits as you progress"
+    ],
+    "controlsText": "Use your mouse, keyboard arrows, or touch the screen to perform dance moves. The more accurate your timing, the higher your score!",
+    "relatedGames": [
+      {
+        "title": "LOL Surprise",
+        "slug": "lol-surprise",
+        "imageSlug": "lol-surprise",
+        "tag": "Racing",
+        "color": "cyan"
+      },
+      {
+        "title": "Pets Beauty Salon",
+        "slug": "pets-beauty-salon",
+        "imageSlug": "pets-beauty-salon",
+        "tag": "Beauty",
+        "color": "pink"
+      },
+      {
+        "title": "Candy Bubble",
+        "slug": "candy-bubble",
+        "imageSlug": "candy-bubble",
+        "tag": "Puzzle",
+        "color": "purple"
+      },
+      {
+        "title": "Shopping Mania",
+        "slug": "shopping-mania",
+        "imageSlug": "shopping-mania",
+        "tag": "Shopping",
+        "color": "orange"
+      }
+    ]
+  },
+  {
+    "id": "lol-surprise",
+    "title": "LOL Surprise BB Driver",
+    "slug": "lol-surprise",
+    "imageSlug": "lol-surprise",
+    "gameType": "Fun Racing Game",
+    "description": "Race with your favorite LOL Surprise characters in this fun driving game.",
+    "shortDescription": "A colorful LOL racing game",
+    "primaryColor": "cyan",
+    "iframeUrl": "https://html5.gamedistribution.com/f40ed8b0fa9e4a79bacb6cf8f1c83049/?gd_sdk_referrer_url=https://www.onlinegames.io/lol-surprise-bb-driver/",
+    "tags": [
+      { "name": "Racing", "color": "cyan" },
+      { "name": "Kids", "color": "pink" },
+      { "name": "Driving", "color": "yellow" }
+    ],
+    "introText": "Get behind the wheel with your favorite LOL Surprise characters in this exciting racing game!",
+    "instructions": [
+      "Choose your LOL Surprise character and vehicle",
+      "Navigate through colorful tracks and obstacles",
+      "Collect bonuses and power-ups along the way",
+      "Use special abilities to gain advantage in the race",
+      "Finish first to unlock new characters and tracks"
+    ],
+    "controlsText": "Use the arrow keys or on-screen controls to steer, accelerate, and brake. Race against the clock or compete with other characters to become the champion!",
+    "relatedGames": [
+      {
+        "title": "Weird Dance",
+        "slug": "weird-dance",
+        "imageSlug": "weird-dance",
+        "tag": "Fun",
+        "color": "yellow"
+      },
+      {
+        "title": "Candy Bubble",
+        "slug": "candy-bubble",
+        "imageSlug": "candy-bubble",
+        "tag": "Puzzle",
+        "color": "purple"
+      },
+      {
+        "title": "Pets Beauty Salon",
+        "slug": "pets-beauty-salon",
+        "imageSlug": "pets-beauty-salon",
+        "tag": "Beauty",
+        "color": "pink"
+      },
+      {
+        "title": "Tile Match",
+        "slug": "tile-match",
+        "imageSlug": "tile-match",
+        "tag": "Puzzle",
+        "color": "blue"
+      }
+    ]
+  }
+] 

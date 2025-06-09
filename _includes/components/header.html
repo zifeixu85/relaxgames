@@ -1,0 +1,25 @@
+<header class="glass-nav sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="/" class="flex items-center">
+            <span class="text-2xl font-bold text-apple-pink">Relax<span class="text-apple-blue">Games</span></span>
+        </a>
+        <nav class="hidden md:flex space-x-6">
+            <a href="/" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">Home</a>
+            <a href="/#all-games" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">All Games</a>
+            <a href="/#about" class="font-medium text-gray-600 hover:text-apple-blue transition duration-200">About</a>
+        </nav>
+        <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-white shadow-md" id="mobile-menu">
+        <div class="container mx-auto px-4 py-3 space-y-2">
+            <a href="/" class="block font-medium text-gray-600 hover:text-apple-blue py-2">Home</a>
+            <a href="/#all-games" class="block font-medium text-gray-600 hover:text-apple-blue py-2">All Games</a>
+            <a href="/#about" class="block font-medium text-gray-600 hover:text-apple-blue py-2">About</a>
+        </div>
+    </div>
+</header> 

@@ -1,0 +1,19 @@
+<div class="mb-10">
+    <h2 class="text-2xl font-bold text-apple-{{#if relatedColor}}{{relatedColor}}{{else}}purple{{/if}} mb-6">More Games You Might Like</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {{#each relatedGames}}
+        <div class="game-card bg-white rounded-lg shadow-md overflow-hidden">
+            <a href="./{{this.slug}}.html" class="block relative overflow-hidden pb-[75%] bg-apple-{{this.color}}/5">
+                <img src="../images/{{this.imageSlug}}.png" alt="{{this.title}}" class="absolute inset-0 w-full h-full object-cover">
+            </a>
+            <div class="p-3">
+                <h3 class="text-base font-bold text-apple-{{this.color}} mb-1">{{this.title}}</h3>
+                <div class="flex items-center justify-between">
+                    <span class="px-2 py-0.5 bg-apple-{{this.color}}/10 text-apple-{{this.color}} rounded-full text-xs">{{this.tag}}</span>
+                    <a href="./{{this.slug}}.html" class="text-apple-blue text-sm font-medium hover:underline">Play</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div> 

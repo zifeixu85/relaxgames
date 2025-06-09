@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "node build.js --dev",
-    "build": "node build.js --build",
+    "build-old": "node build.js --build",
+    "build": "node generate-pages.js",
+    "manage-games": "node manage-games.js",
     "vercel-build": "npm run build",
     "cloudflare-build": "npm run build && cp _headers _redirects .",
     "create-game": "node create-game-page.js"
@@ -19,6 +21,7 @@
   "author": "RelaxGames",
   "license": "MIT",
   "dependencies": {
+    "handlebars": "^4.7.8",
     "jsdom": "^22.1.0"
   }
 }

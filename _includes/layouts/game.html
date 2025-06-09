@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> components/meta-tags}}
+    <title>{{title}} - {{gameType}} | RelaxGames</title>
+    <link rel="canonical" href="https://relaxgames.online/games/{{slug}}.html">
+    {{> components/styles}}
+</head>
+<body class="bg-apple-lightgray text-gray-800 bg-feminine-gradient bg-decorative">
+    {{> components/header}}
+
+    <!-- Game Section -->
+    <section class="py-6 md:py-10 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h1 class="text-3xl md:text-4xl font-bold text-apple-{{primaryColor}} mb-4">{{title}}</h1>
+                <p class="text-lg text-gray-600 mb-6">{{description}}</p>
+
+                <!-- Game iframe -->
+                <div class="game-iframe-container mb-6 rounded-xl overflow-hidden shadow-lg">
+                    <iframe src="{{iframeUrl}}" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <!-- Share and Info Section -->
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center bg-white p-4 rounded-lg shadow-md mb-8">
+                    <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                        {{#each tags}}
+                        <span class="px-3 py-1 bg-apple-{{this.color}}/10 text-apple-{{this.color}} rounded-full text-sm font-medium">{{this.name}}</span>
+                        {{/each}}
+                    </div>
+                    {{> components/share-buttons}}
+                </div>
+
+                <!-- Game Instructions -->
+                <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-apple-blue mb-4">How to Play</h2>
+                    <div class="text-gray-600 space-y-3">
+                        <p>{{introText}}</p>
+                        <ol class="list-decimal pl-5 space-y-2">
+                            {{#each instructions}}
+                            <li>{{this}}</li>
+                            {{/each}}
+                        </ol>
+                        <p class="mt-4">{{controlsText}}</p>
+                    </div>
+                </div>
+
+                <!-- Related Games Section -->
+                {{> components/related-games}}
+            </div>
+        </div>
+    </section>
+
+    {{> components/footer}}
+    {{> components/scripts}}
+</body>
+</html> 
