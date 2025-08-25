@@ -58,9 +58,9 @@ function compileTemplate() {
 // 生成游戏页面
 function generateGamePages(template, games) {
     // 确保游戏页面目录存在
-    const gamesDir = path.join(__dirname, 'games');
+    const gamesDir = path.join(__dirname, 'public/games');
     if (!fs.existsSync(gamesDir)) {
-        fs.mkdirSync(gamesDir);
+        fs.mkdirSync(gamesDir, { recursive: true });
     }
     
     // 为每个游戏生成页面
@@ -76,6 +76,83 @@ function generateGamePages(template, games) {
             console.log(`✅ 已生成: ${game.slug}.html`);
         } catch (error) {
             console.error(`❌ 生成 ${game.slug}.html 失败:`, error);
+        }
+    });
+}
+
+// 复制静态文件到 public 目录
+function copyStaticFiles() {
+    const publicDir = path.join(__dirname, 'public');
+    
+    // 确保 public 目录存在
+    if (!fs.existsSync(publicDir)) {
+        fs.mkdirSync(publicDir, { recursive: true });
+    }
+    
+    // 需要复制的文件和目录
+    const filesToCopy = [
+        'index.html',
+        '404.html',
+        'privacy-policy.html',
+        'styles.css',
+        'scripts.js',
+        'seo-script.js',
+        'game-descriptions.js',
+        'sitemap.xml',
+        'robots.txt',
+        '_headers',
+        '_redirects',
+        'meta-tags.html'
+    ];
+    
+    const dirsToCopy = [
+        'images'
+    ];
+    
+    // 复制文件
+    filesToCopy.forEach(file => {
+        const sourcePath = path.join(__dirname, file);
+        const destPath = path.join(publicDir, file);
+        
+        if (fs.existsSync(sourcePath)) {
+            fs.copyFileSync(sourcePath, destPath);
+            console.log(`✅ 已复制: ${file}`);
+        } else {
+            console.log(`⚠️  文件不存在: ${file}`);
+        }
+    });
+    
+    // 复制目录
+    dirsToCopy.forEach(dir => {
+        const sourcePath = path.join(__dirname, dir);
+        const destPath = path.join(publicDir, dir);
+        
+        if (fs.existsSync(sourcePath)) {
+            // 递归复制目录
+            copyDirectory(sourcePath, destPath);
+            console.log(`✅ 已复制目录: ${dir}`);
+        } else {
+            console.log(`⚠️  目录不存在: ${dir}`);
+        }
+    });
+}
+
+// 递归复制目录
+function copyDirectory(source, destination) {
+    if (!fs.existsSync(destination)) {
+        fs.mkdirSync(destination, { recursive: true });
+    }
+    
+    const items = fs.readdirSync(source);
+    
+    items.forEach(item => {
+        const sourcePath = path.join(source, item);
+        const destPath = path.join(destination, item);
+        
+        if (fs.statSync(sourcePath).isDirectory()) {
+            copyDirectory(sourcePath, destPath);
+        } else {
+            fs.copyFileSync(sourcePath, destPath);
         }
     });
 }
@@ -98,10 +175,15 @@ function main() {
         return;
     }
     
+    // 复制静态文件
+    console.log('📁 复制静态文件...');
+    copyStaticFiles();
+    
     // 生成页面
     generateGamePages(template, games);
     
     console.log('✨ 页面生成完成!');
+    console.log('📂 输出目录: public/');
 }
 
 // 执行主函数
